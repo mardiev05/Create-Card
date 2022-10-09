@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import Input from "./Components/Input"
+import LeftSide from "./Components/LestSide";
+import FrontOfCard from "./Components/FrontOfCard";
+import BackOfCard from "./Components/BackOfCard"
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <LeftSide />
+            <Input />
+            <FrontOfCard />
+            <BackOfCard />
+        </div>
+    );
 }
 
 export default App;
